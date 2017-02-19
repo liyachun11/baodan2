@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit">
+		<title>保代宝后台管理系统</title>
+		<meta name="keywords" content="保代宝后台管理系统">
+		<meta name="description" content="保代宝后台管理系统">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="shortcut icon" href="../img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="BDD-login">
+			<!--登陆-->
+			<div class="BDB-landing landing">
+				<form id="loginForm" action="" method="post">
+					<div class="BDB-box">
+						<p class="BDB-title">登陆</p>
+						<div class="BDB-line pr ">
+							<div class="BDB-moudles">
+								<i class="login-name"></i>
+								<input type="text" class="BDB-input" name="" id="logiName" value="" placeholder="登陆ID" />
+							</div>
+						</div>
+
+						<div class="BDB-line pr">
+							<div class="BDB-moudles">
+								<i class="login-password"></i>
+								<input type="password" class="BDB-input" name="" id="loginPass" value="" placeholder="请输入您的密码" />
+							</div>
+
+						</div>
+
+						<div class="BDB-line clear">
+							<div class="BDB-moudles fl auth-code">
+								<input type="text" class="BDB-input" name="" id="loginCode" value="" />
+							</div>
+
+							<div class="fr code-contet-btn">
+								<span><img src="" alt="验证码"/></span>
+								<a href="javascript:;" class="code-btn">换一张</a>
+							</div>
+						</div>
+						<div class="BDB-line clear">
+							<span class="fr"><a href="javascript:;" class="BDB-password">忘记密码？</a></span>
+						</div>
+						<div class="BDB-btn">
+							<button type="button" id="login-but">登陆</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!--忘记密码-->
+			<div class="BDB-landing forgot-password" style="display: none;">
+				<div class="BDB-box">
+					<p class="BDB-title">找回密码</p>
+					<div class="BDB-line pr ">
+						<p class="BDB-prev">请输入账号</p>
+						<input type="text" class="BDB-moudle-input " name="" id="loginAccount" value="" placeholder="请输入账号" />
+					</div>
+					<div class="BDB-line pr">
+						<p class="BDB-prev">请输入手机验证码</p>
+						<input type="text" class="BDB-moudle-input " name="" id="loginPhone" value="" placeholder="请输入手机验证码" />
+					</div>
+					<div class="BDB-line clear">
+						<span class="fr"><a href="javascript:;" class="BDB-return">返回</a></span>
+					</div>
+					<div class="BDB-btn">
+						<button type="button" class="next-step">下一步</button>
+					</div>
+				</div>
+			</div>
+			<!--新密码-->
+			<div class="BDB-landing new-password" style="display: none;">
+				<div class="BDB-box">
+					<p class="BDB-title">重置密码</p>
+					<div class="BDB-line pr ">
+						<p class="BDB-prev">请输入新密码</p>
+						<input type="password" class="BDB-moudle-input " name="" id="loginNewPass" value="" placeholder="请输入新密码" />
+					</div>
+
+					<div class="BDB-line pr">
+						<p class="BDB-prev">请确认新密码</p>
+						<input type="password" class="BDB-moudle-input " name="" id="loginSurePass" value="" placeholder="请确认新密码" />
+					</div>
+					<div class="BDB-line clear">
+						<span class="fr"><a href="javascript:;" class="BDB-return">返回</a></span>
+					</div>
+					<div class="BDB-btn">
+						<button type="button" class="next-step">下一步</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

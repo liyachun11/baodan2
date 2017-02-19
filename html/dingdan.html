@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>订单</title>
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+    </head>
+    <body>
+    	<div class="head-box">
+    		<div class="main-box head-1">
+    			<img class="head-img1" src="../img/logo.png">
+    			<div class="head-2">
+    				<img src="../img/cs.jpg">
+    				<p>个人中心</p>
+    			</div>
+    		</div>
+    	</div>
+        <div class="nav-bg">
+            <div class="main-box">
+                <ul class="nav-ul">
+                    <li >
+                        <a href="index.html">
+                        <div class="nav-ioc"></div>
+                        <p>首页</p>
+                        </a>
+                    </li>
+                    <li class="nav-cont">
+                        <a href="javascript:;">
+                        <div class="nav-ioc nav-ioc2"></div>
+                        <p>订单</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="zhanghu.html">
+                        <div class="nav-ioc nav-ioc3"></div>
+                        <p>账户</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shujutongji.html">
+                        <div class="nav-ioc nav-ioc4"></div>
+                        <p>数据统计</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                        <div class="nav-ioc nav-ioc5"></div>
+                        <p>保险公司</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+	<div class="main-box">
+		<div class="cont-1">
+            <div class="cont-2">
+                <span></span>您当前位置&nbsp>&nbsp订单
+            </div>
+            <div class="cont-3">
+                2016年12月12日  15:10:20  
+                <strong>星期一</strong>
+            </div>
+        </div>
+        <div class="dingdan-box">
+        <h3>订单列表</h3>
+			<form id="frm_search">
+			<div class="wrap_top_input">
+					<input type="text" id="start_date" name="start_date" class="g_inp" placeholder="输入起始日期" size="10" >
+					<input type="text" id="end_date" name="end_date" class="g_inp" placeholder="输入结束日期" size="10" >
+					<input type="text" id="order_id" name="order_id" class="g_inp" placeholder="输入订单号" size="10">
+					<input type="text" id="car_number" name="car_number" class="g_inp" placeholder="输入车牌号" size="10">
+					<input type="text" id="uname" name="uname" class="g_inp" placeholder="输入被保险人姓名" size="15">
+
+					<select name="ic_name" class="g_select" style="width:100px">
+						<option value="">保险公司</option>
+						<option value="三井住友" >三井住友</option>
+						<option value="中华联合" >中华联合</option>
+						<option value="人保" >人保</option>
+						<option value="利宝" >利宝</option>
+						<option value="华安" >华安</option>
+						<option value="大地" >大地</option>
+						<option value="天平" >天平</option>
+						<option value="太平" >太平</option>
+						<option value="太平洋" >太平洋</option>
+						<option value="安邦" >安邦</option>
+						<option value="平安" >平安</option>
+					</select>
+					
+					<select name="status" class="g_select" style="width:90px">
+						<option value="">订单状态</option>
+						<option value="init" >等待报价</option>
+						<option value="quoted" >已报价</option>
+						<option value="deny" >已拒绝</option>
+						<option value="paid" >已付款</option>
+						<option value="to_b" >已出单</option>
+						<option value="done" >已完成</option>
+					</select>
+					<span class="pail-la">排列<i></i></span>
+					<div id="btn_search" class="btn_green_xiao">搜索</div>
+			</div>
+			</form>
+		</div>
+			<div class="g_box" style="border-top-left-radius:0">
+			<div class="order_pc">
+				<table class="g_table_01">
+					<tr>
+						<th align="left"><strong>序号</strong></th>
+						<th align="left"><strong>订单号</strong></th>
+						<th align="left"><strong>分公司</strong></th>
+						<th align="left"><strong>车牌号</strong></th>
+						<th align="left"><strong>被保险人姓名</strong></th>
+						<th align="left"><strong>全费(元)</strong></th>
+						<th align="left"><strong>净费</strong></th>	
+						<th align="left"><strong>结算金额</strong></th>
+						<th align="left"><strong>全费</strong></th>
+						<th align="left"><strong>险种</strong></th>
+						<th align="left"><strong>保险公司</strong></th>
+						<th align="left"><strong>状态</strong></th>
+						<th align="left"><strong>下单时间</strong></th>
+						<th align="left"><strong> 代理人</strong></th>
+						<th align="left"><strong>操作</strong></th>
+					</tr>
+					<tr>
+						<th width="50">1</th>
+						<td width="78">1795</td>
+						<td width="78">总部</td>
+						<td width="100">陕A6MH57</td>
+						<td width="90">赵振强</td>
+						<td width="95">0.00 元</td>
+						<td width="101">0.00 元</td>					
+						<td width="101">0 元</td>
+						<td width="60">0.00</td>
+						<td width="80">交强</td>
+						<td width="112"><img src="../img/zhonghualianhe.jpg" width="112" height="31"  alt=""/></td>
+						<td width="89"><span class="c_r">已付款</span></td>
+						<td width="160">2017-02-13 11:27:55</td>
+						<td width="100">朱晓菲</td>
+						<td width="70"><a href="dingdan-look.html" class="underline" >查看</a></td>
+					</tr>
+					<tr>
+						<th width="50">2</th>
+						<td width="78">1795</td>
+						<td width="78">总部</td>
+						<td width="100">陕A6MH57</td>
+						<td width="90">赵振强</td>
+						<td width="95">0.00 元</td>
+						<td width="101">0.00 元</td>					
+						<td width="101">0 元</td>
+						<td width="60">0.00</td>
+						<td width="80">交强</td>
+						<td width="112"><img src="../img/renbao.jpg" width="112" height="31"  alt=""/></td>
+						<td width="89"><span class="c_rl">人工报价</span></td>
+						<td width="160">2017-02-13 11:27:55</td>
+						<td width="100">朱晓菲</td>
+						<td width="70"><a href="javascript:;" class="underline">查看</a></td>
+					</tr>
+					<tr>
+						<th width="50">3</th>
+						<td width="78">1795</td>
+						<td width="78">总部</td>
+						<td width="100">陕A6MH57</td>
+						<td width="90">赵振强</td>
+						<td width="95">0.00 元</td>
+						<td width="101">0.00 元</td>					
+						<td width="101">0 元</td>
+						<td width="60">0.00</td>
+						<td width="80">交强</td>
+						<td width="112"><img src="../img/zhonghualianhe.jpg" width="112" height="31"  alt=""/></td>
+						<td width="89"><span class="c_rl">等待报价</span></td>
+						<td width="160">2017-02-13 11:27:55</td>
+						<td width="100">朱晓菲</td>
+						<td width="70"><a href="javascript:;" class="underline" >查看</a></td>
+					</tr>
+					<tr>
+						<th width="50">4</th>
+						<td width="78">1795</td>
+						<td width="78">总部</td>
+						<td width="100">陕A6MH57</td>
+						<td width="90">赵振强</td>
+						<td width="95">0.00 元</td>
+						<td width="101">0.00 元</td>					
+						<td width="101">0 元</td>
+						<td width="60">0.00</td>
+						<td width="80">交强</td>
+						<td width="112"><img src="../img/zhonghualianhe.jpg" width="112" height="31"  alt=""/></td>
+						<td width="89"><span class="c_rh">已拒绝</span></td>
+						<td width="160">2017-02-13 11:27:55</td>
+						<td width="100">朱晓菲</td>
+						<td width="70"><a href="javascript:;" class="underline" >查看</a></td>
+					</tr>
+					<tr>
+						<th width="50">5</th>
+						<td width="78">1795</td>
+						<td width="78">总部</td>
+						<td width="78">陕A6MH57</td>
+						<td width="155">赵振强</td>
+						<td width="95">0.00 元</td>
+						<td width="101">0.00 元</td>					
+						<td width="101">0 元</td>
+						<td width="60">0.00</td>
+						<td width="80">交强</td>
+						<td width="112"><img src="../img/zhonghualianhe.jpg" width="112" height="31"  alt=""/></td>
+						<td width="89"><span class="c_rh">已出单</span></td>
+						<td width="160">2017-02-13 11:27:55</td>
+						<td width="100">朱晓菲</td>
+						<td width="70"><a href="javascript:;" class="underline" >查看</a></td>
+					</tr>
+					<tr>
+						<th width="50">6</th>
+						<td width="78">1795</td>
+						<td width="78">总部</td>
+						<td width="78">陕A6MH57</td>
+						<td width="155">赵振强</td>
+						<td width="95">0.00 元</td>
+						<td width="101">0.00 元</td>					
+						<td width="101">0 元</td>
+						<td width="60">0.00</td>
+						<td width="80">交强</td>
+						<td width="112"><img src="../img/zhonghualianhe.jpg" width="112" height="31"  alt=""/></td>
+						<td width="89"><span class="c_rh">已完成</span></td>
+						<td width="160">2017-02-13 11:27:55</td>
+						<td width="100">朱晓菲</td>
+						<td width="70"><a href="javascript:;" class="underline" >查看</a></td>
+					</tr>
+								
+					
+				</table>
+
+				<div  class='g_page'>
+					<span class="feny-span">共计：1382条</span> 
+					<ul class="pagination">
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#" style="border:0;">...</a></li>
+					    <li><a href="#">50</a></li>
+					    <li><a href="#">下一页</a></li>
+					    <li><a href="#">最后页</a></li>
+					</ul>
+					<div class="fen-go">
+						跳到
+						<input type='text' id='page_jump' value='1' class='g_inp'>页 
+						<span class='btn_white'>GO</span>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+
+		<script>
+			$(function(){
+				Bdb.Common();
+				
+				datePicker("start_date");
+				datePicker("end_date");
+				
+				$("#btn_search").click(function(){
+					$("#frm_search").submit();
+				});
+			})
+			Bdb = {};
+
+
+	/**
+	 * 返回字符串的长度,英文+1，utf8中文+3
+	 * @param str
+	 * @returns {Number}
+	 */
+			function getStringLength(str)
+			{
+			    var realLength = 0, len = str.length, charCode = -1;
+			    for (var i = 0; i < len; i++)
+			    {
+			        charCode = str.charCodeAt(i);
+			        if (charCode >= 0 && charCode <= 128) realLength += 1;
+			        else realLength += 3;
+			    }
+			    return realLength;
+			}
+
+			function datePicker(id)
+			{
+				$("#"+id).datepicker({dateFormat: "yy-mm-dd",
+					monthNames:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+					dayNamesMin:["日","一","二","三","四","五","六"]});
+			}
+
+			Bdb.Common = function(){
+				$("[data-url]").on("click",function(){
+					location.href=$(this).attr('data-url');
+				});
+			};
+
+		</script>
+	</div>
+
+        <div class="foot-1">
+            <p>京ICP备16004067号</p>
+        </div>
+    </body>
+</html>

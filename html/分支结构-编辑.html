@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>数据统计</title>
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+        <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    	<div class="head-box">
+    		<div class="main-box head-1">
+    			<img class="head-img1" src="../img/logo.png">
+    			<div class="head-2">
+    				<img src="../img/cs.jpg">
+    				<p>个人中心</p>
+    			</div>
+    		</div>
+    	</div>
+        <div class="nav-bg">
+            <div class="main-box">
+                <ul class="nav-ul">
+                    <li >
+                        <a href="index.html">
+                        <div class="nav-ioc"></div>
+                        <p>首页</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="dingdan.html">
+                        <div class="nav-ioc nav-ioc2"></div>
+                        <p>订单</p>
+                        </a>
+                    </li>
+                    <li class="nav-cont">
+                        <a href="javascript:;">
+                        <div class="nav-ioc nav-ioc3"></div>
+                        <p>账户</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="shujutongji.html">
+                        <div class="nav-ioc nav-ioc4"></div>
+                        <p>数据统计</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                        <div class="nav-ioc nav-ioc5"></div>
+                        <p>保险公司</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+	<div class="main-box shuju-box1">
+		<div class="cont-1">
+            <div class="cont-2">
+                <span></span>您当前位置&nbsp>&nbsp数据统计
+            </div>
+            <div class="cont-3">
+                2016年12月12日  15:10:20  
+                <strong>星期一</strong>
+            </div>
+        </div>
+        <div class="dingdan-box zhanghu-box">
+        	<ul id="myTab" class="nav nav-tabs zhanghu-tab">
+			    <li class="active">
+			    	<a href="#shezhi" data-toggle="tab" class="zhanghu-br"><span>设置</span></a>
+			    </li>
+			    <li>
+			    	<a href="#fenzhi" data-toggle="tab"><span>分支机构</span></a>
+		    	</li>
+			    <li >
+			    	<a href="#daili" data-toggle="tab"><span>代理人列表</span></a>
+		    	</li>
+		    	<li >
+			    	<a href="#chudan" data-toggle="tab"><span>出单员</span></a>
+		    	</li>
+		    	<li >
+			    	<a href="#kefu" data-toggle="tab"><span>客服</span></a>
+		    	</li>
+		    	<li >
+			    	<a href="#caiwu" data-toggle="tab"><span>财务</span></a>
+		    	</li>
+		    	<li >
+			    	<a href="#jiangli" data-toggle="tab"><span>奖励政策</span></a>
+		    	</li>
+		    	<li >
+			    	<a href="#zhongxin" data-toggle="tab"><span>个人中心</span></a>
+		    	</li>
+		    	<li >
+			    	<a href="#anquan" data-toggle="tab"><span>账户安全</span></a>
+		    	</li>
+			</ul>
+
+			<div id="myTabContent" class="tab-content">
+				<!-- 设置内容 -->
+			    <div class="tab-pane fade in active" id="shezhi">
+			        <div class="shezhi-box">
+			        	<form id="frm_edit_setting">
+					        <div class="order_pc">
+					            <div class="order_pc">
+	                                <dl class="g_writ_che she1-input">
+					                    <dt class="g_yon">付费方式</dt>
+					                    <dd>
+					                    	<input type="radio" name="ee" value="" checked>是
+					                    	<input type="radio" name="ee" value="" >否
+					                    </dd>
+					                    <dt class="she1-dt">认证身份证必选</dt>
+					                    <dd>
+					                    	<input type="radio" name="cc" value="" checked>是
+					                    	<input type="radio" name="cc" value="" >否
+					                    </dd>
+					                </dl>
+
+					                <dl class="g_writ_che she1-dl">
+					                    <dt class="g_yon">交强险使用元宝</dt>
+					                    <dd><input type="text"  name="" value="">个</dd>
+					                    <dt class="she1-dt">注册送元宝</dt>
+					                    <dd><input type="text"  name="" value="">个</dd>
+					                    <dt class="she1-dt">邀请注册送元宝</dt>
+					                    <dd><input type="text"  name="" value="">个</dd>
+					                </dl>
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">单次元宝使用上限比例</dt>
+					                    <dd><input type="text"  name=""  value="" class="d2-inp">%</dd>
+					                    <dt class="she2-dt">机构代理人是否开启上线奖励</dt>
+					                    <dd>
+					                    	<input type="radio"  value="" name="dd" checked>是
+					                    	<input type="radio"  value="" name="dd" >否
+					                    </dd>
+					                    <dt>团队长奖励元宝比例</dt>
+					                    <dd><input type="text"  name=""  value="" class="d2-inp">%</dd>
+					                </dl>
+
+					                
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">出单员短信头</dt>
+					                    <dd><input type="text" id="" name="" value="" class="d2-inp" style="width:780px;"></dd>
+					                </dl>
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">出单员短信尾</dt>
+					                    <dd><input type="text" id="" name="" class="d2-inp" value="" style="width:780px;"></dd>
+					                </dl>
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon" >代理人短信头</dt>
+					                    <dd><input type="text" id="" name="" class="d2-inp" value="" style="width:780px;"></dd>
+					                </dl>
+					                
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">代理人短信尾</dt>
+					                    <dd>
+					                    	<select class="d2-inp" style="width:780px;">
+					                    		<option value="" >无</option>
+					                    		<option value="" selected>自定义</option>
+					                    	</select>
+					                    </dd>
+					                </dl>
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">询价短信发送范围</dt>
+					                    <dd>
+					                    	<select class="d2-inp" style="width:780px;">
+					                    		<option value="0" selected>仅总机构出单员接收所有短信</option>
+					                            <option value="1" >出单员仅接收本机构(或本分支)的短信</option>
+					                            <option value="2" >仅总机构出单员接收所有短信</option>
+					                            <option value="3" >总机构出单员接收所有分支短信，各分支接收自己的短信</option>
+					                    	</select>
+					                    </dd>
+					                </dl>
+	                                
+									<dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">人工报价延迟提醒时间</dt>
+					                    <dd><input type="text"  name=""  value="" class="d2-inp">分钟</dd>
+					                    <dt>自动报价转人工的时间</dt>
+					                    <dd><input type="text"  name=""  value="" class="d2-inp">分钟</dd>
+					                    <dt>再次提醒的时间</dt>
+					                    <dd><input type="text"  name=""  value="" class="d2-inp">分钟</dd>
+					                </dl>
+
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">对外报价超时短信提醒</dt>
+					                    <dd><input type="text" class="d2-inp" name=""  value="" style="width:620px;"><span style="color: red;margin-left: 5px;">多个手机用英文逗号隔开</span></dd>
+					                </dl>
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">付款短信接收号码</dt>
+					                    <dd><input type="text" class="d2-inp"  name=""  value="" style="width:620px;"><span style="color: red;margin-left: 5px;">多个手机用英文逗号隔开</span</dd>
+					                </dl>
+					                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">对内报价超时短信提醒</dt>
+					                    <dd><input type="text" class="d2-inp"  name=""  value="" style="width:620px;"><span style="color: red;margin-left: 5px;">多个手机用英文逗号隔开</span</dd>
+					                </dl>
+					                
+	                                <dl class="g_writ_che she1-d2">
+					                    <dt class="g_yon">支付信息提示</dt>
+					                    <dd><input type="text"  name=""  value="" class="d2-inp">分钟</dd>
+					                    <dt>最大延迟付款时间</dt>
+					                    <dd><input type="text"  name=""  value="" class="d2-inp">分钟</dd>
+					                </dl>
+						        </div>
+						    </div>
+						</form>
+						<div class="btn btn-lg btn-block she-but">立即提交</div>
+					</div>
+				
+				</div>
+			    <!-- 分支机构内容 -->
+			    <div class="tab-pane fade" id="fenzhi">
+			        
+			        <div class="order_pc zhbj-box">
+
+		                <dl class="g_writ_che she1-d2">
+		                    <dt class='g_yon'><span class="c_r">*</span> 手机号</dt>
+		                    <dd class="main"><input type="text" id="company" name="mobile" class="d2-inp" value="" style="width:260px;"></dd>
+		                    <dd><span class="signin_tips_err" id="tip_mobile"></span></dd>
+		                </dl>
+
+		                <dl class="g_writ_che she1-d2">
+		                    <dt class='g_yon'><span class="c_r">*</span> 设置登录密码</dt>
+		                    <dd class="main"><input type="text" id="company" name="company" class="d2-inp" value="" style="width:260px;"></dd>
+		                    <dd><span class="signin_tips_err" id="tip_company"></span></dd>
+		                </dl>
+
+		                <dl class="g_writ_che she1-d2">
+		                    <dt class='g_yon'><span class="c_r">*</span> 分支机构名称</dt>
+		                    <dd class="main"><input type="text" id="uname" name="uname" class="d2-inp" value="" style="width:260px;"></dd>
+		                    <dd><span class="signin_tips_err" id="tip_uname"></span></dd>
+		                </dl>
+						<dl class="g_writ_che she1-d2">
+		                    <dt class='g_yon'><span class="c_r">*</span> 负责人</dt>
+		                    <dd class="main"><input type="password" id="password" name="password" class="d2-inp" value="" style="width:260px;"></dd>
+		                    <dd><span class="signin_tips_err" id="tip_password"></span></dd>
+		                </dl>
+		                <dl class="g_writ_che">
+		                    <dt class='g_yon'><span class="c_r">*</span> 地区</dt>
+		                    <dd>
+		                        <select name="city" id="city">
+                                    <option value="3300" selected="">陕西</option>
+                                    <option value="3301">北京</option>
+                                </select>
+		                        <select name="city" id="city">
+                                    <option value="3301" selected="">西安</option>
+                                    <option value="3303">宝鸡</option>
+                                </select>
+		                    </dd>
+		                    <dd><span class="signin_tips_err" id="tip_province" style="display:inline;"></span>
+		                    <span class="signin_tips_err" id="tip_city" style="display:inline;"></span></dd>
+		                </dl>
+		                
+		                <dl class="g_writ_che">
+		                    <dt class='g_yon'>&nbsp;</dt>
+		                    <dd class="c_r"><span id="btn_post" class="btn_green bianji-btn">立即提交</span></dd>
+		                </dl>
+		                <dl class="erwei-m">
+		                	<img src="../img/erweima.png" height="193" width="192" alt="二维码" >
+		                    <dt> 二维码</dt>
+		                </dl>
+					</div>
+
+			    </div>
+			    <!-- 代理人列表内容 -->
+			    <div class="tab-pane fade" id="daili">
+			        <p>代理人列表内容</p>
+			    </div>
+			    <!-- 出单员内容 -->
+			    <div class="tab-pane fade" id="chudan">
+			        <p>出单员内容</p>
+			    </div>
+			    <!-- 客服内容 -->
+			    <div class="tab-pane fade" id="kefu">
+			        <p>客服内容</p>
+			    </div>
+			    <!-- 财务内容 -->
+			    <div class="tab-pane fade" id="caiwu">
+			        <p>财务内容</p>
+			    </div>
+			    <!-- 奖励政策内容 -->
+			    <div class="tab-pane fade" id="jiangli">
+			        <p>奖励政策内容</p>
+			    </div>
+			    <!-- 个人中心内容 -->
+			    <div class="tab-pane fade" id="zhongxin">
+			        <p>个人中心内容。</p>
+			    </div>
+			    <!-- 账户安全内容 -->
+			    <div class="tab-pane fade" id="anquan">
+			        <p>账户安全内容</p>
+			    </div>
+		    </div>
+		</div>
+			<script>
+			    $(function () {
+			        $('#myTab li:eq(1) a').tab('show');
+			    });
+			</script>
+			
+		</div>
+
+        <div class="foot-1">
+            <p>京ICP备16004067号</p>
+        </div>
+    </body>
+</html>

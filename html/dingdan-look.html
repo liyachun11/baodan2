@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>订单详情</title>
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+    </head>
+    <body>
+    	<div class="head-box">
+    		<div class="main-box head-1">
+    			<img class="head-img1" src="../img/logo.png">
+    			<div class="head-2">
+    				<img src="../img/cs.jpg">
+    				<p>个人中心</p>
+    			</div>
+    		</div>
+    	</div>
+        <div class="nav-bg">
+            <div class="main-box">
+                <ul class="nav-ul">
+                    <li >
+                        <a href="index.html">
+                        <div class="nav-ioc"></div>
+                        <p>首页</p>
+                        </a>
+                    </li>
+                    <li class="nav-cont">
+                        <a href="javascript:;">
+                        <div class="nav-ioc nav-ioc2"></div>
+                        <p>订单</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="zhanghu.html">
+                        <div class="nav-ioc nav-ioc3"></div>
+                        <p>账户</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shujutongji.html">
+                        <div class="nav-ioc nav-ioc4"></div>
+                        <p>数据统计</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                        <div class="nav-ioc nav-ioc5"></div>
+                        <p>保险公司</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+	<div class="main-box">
+		<div class="cont-1">
+            <div class="cont-2">
+                <span></span>您当前位置&nbsp>&nbsp订单
+            </div>
+            <div class="cont-3">
+                2016年12月12日  15:10:20  
+                <strong>星期一</strong>
+            </div>
+        </div>
+        <div class="dingdan-box">
+        	<h3>订单列表</h3>
+        	<div class="look-xq">
+	        	<div class="status">
+					<div class="dot_gr dot_cr">
+						<p class="node_name">投保询价</p>
+						<p class="node_time">2017-02-13 17:57:47</p>
+					</div>
+					<div class="jiantou jiantou2"></div>
+					<div class="dot_gr dot_cr">
+						<p class="node_name">报价反馈</p>
+						<p class="node_time">2017-02-13 17:57:53</p>
+					</div>
+					<div class="jiantou jiantou2"></div>
+					<div class="dot_gr">
+						<p class="node_name">完成付款</p>
+						<p class="node_time">2017-02-13 17:57:53</p>
+					</div>
+					<div class="jiantou"></div>
+					<div class="dot_gr">
+						<p class="node_name">保单递送</p>
+						<p class="node_time"></p>
+					</div>
+					<div class="jiantou"></div>
+					<div class="dot_gr">
+						<p class="node_name">收到保单</p>
+						<p class="node_time"></p>
+					</div>
+				</div>
+				<!--.......弹出框开始......-->
+				<div class="tan-box">
+					<div class="tan-tlt">无法出售 <span>X</span></div>
+					<div class="tan-cot">
+						<div class="tan-p">说明:请卖方用户如实告知买方用户，若无法精确报价，请联系客服。</div>
+						<p>无法出售的原因:</p>
+						<select name="" class="tan-sel">
+							<option value="" selected="">请选择原因种类</option>
+							<option value="">请选择原因种类1</option>
+						</select>
+						<p>无法出售的原因:</p>
+						<textarea class="tan-text"></textarea>
+						<dd class="c_r"><span id="btn_post" class="btn_green bianji-btn">提交</span></dd>
+					</div>
+
+				</div>
+				<!--.......弹出框结束......-->
+				<div class="look-xinxi">
+					<h4>订单信息</h4>
+					<ul class="look-xinxi-list">
+						<li>
+							订单状态:	<strong>人工报价</strong>
+						</li>
+						<li>
+							订单号:	<strong>人工报价</strong>
+						</li>
+						<li>
+							车险信息:	<strong>人工报价</strong>
+						</li>
+						<li>
+							产品要求:	<strong>人工报价</strong>
+						</li>
+						<li>
+							全费:	<strong>人工报价</strong>
+						</li>
+						<li>
+							净费:	<strong>人工报价</strong>
+						</li>
+						<li>
+							结算金额:	<strong>人工报价</strong>
+						</li>
+					</ul>
+					<p>报价失败的原因: 需要人工报价</p>
+					<div class="look-cat">
+						<div class="look-cat1">
+							根据车架号查询车辆信息
+							<input type="text" class="look-cat-inp" placeholder="输入车架号"  >
+							<input type="text" id="start_date" name="start_date" class="g_inp" placeholder="请选择初登日期" size="10" >
+							<i></i>
+							<div class="look-but">搜索</div>
+						</div>
+						<div class="look-all-input">
+							<ul>
+								<li>
+									<i>*</i>厂牌型号
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>能源类型
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>载重质量
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>车辆种类
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>载客人数
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>载重质量
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>排气量　
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>行驶类型
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>号牌种类
+									<input type="text">
+								</li>
+								<li>
+									<i>*</i>协商车价
+									<input type="text">
+								</li>
+							</ul>
+						</div>
+							<table class="table table-bordered look-tabel">
+								<tbody>
+								<tr>
+									<th colspan="4" align="left" class="look-tabel-1"><strong>基本信息</strong></th>
+								</tr>
+								<tr>
+									<td width="200">车牌号</td>
+									<td width="337">川AC829W</td>
+									<td width="186">过户车</td>
+									<td width="505">否</td>
+								</tr>
+								<tr>
+									<td>被保险人姓名</td>
+									<td width="337">程文文</td>
+									<td width="186">被保险人身份证号码</td>
+									<td width="505">610481198704061822</td>
+								</tr>
+								<tr>
+									<td>车主姓名</td>
+									<td width="337">程文文</td>
+									<td width="186">车主身份证号</td>
+									<td width="505">610481198704061822</td>
+								</tr>
+								<tr>
+									<td>车架号</td>
+									<td width="337">LFP83ACC8E1D01867</td>
+									<td width="186">发动机号</td>
+									<td width="505">W82781</td>
+								</tr>
+								<tr>
+									<td>代理人手机号码</td>
+									<td width="337">18009222374</td>
+									<td width="186">代理人姓名</td>
+									<td width="505">朱晓菲</td>
+								</tr>
+								<tr>
+									<td>初登日期</td>
+									<td width="337">2014-02-13</td>
+									<td width="186">起止日期</td>
+									<td width="505">
+									交强：2017-02-25 00:00:00 ~ 2018-02-24 00:00:00<br>
+									</td>
+								</tr>
+								<tr>
+									<td>厂牌型号</td>
+									<td width="337" id="car_changpai_model">一汽CA7165MT5G1</td>
+									<td width="186">核定座位数</td>
+									<td width="505" id="car_passenger_number">5</td>
+								</tr>
+								<tr>
+									<td>车辆参考价值</td>
+									<td width="337">0.00元</td>
+									<td width="186">协商实际价值</td>
+									<td width="505">0.00元</td>
+								</tr>
+								<tr>
+									<td>商业险折扣</td>
+									<td width="337">0.00</td>
+									<td width="186">发票价</td>
+									<td width="505">0.00元</td>
+								</tr>
+								<tr>
+									<td>整备质量</td>
+									<td width="337" id="car_standard_quality">1325kg</td>
+									<td width="186">核载质量</td>
+									<td width="505" id="car_quality">kg</td>
+								</tr>
+								<tr>
+									<td>车辆类型</td>
+									<td width="337">客车</td>
+									<td width="186">使用性质</td>
+									<td width="505">非营运</td>
+								</tr>
+								<tr>
+									<td>车主性质</td>
+									<td width="337">私人</td>
+									<td width="186">被保险人地址</td>
+									<td width="505"></td>
+								</tr>
+								<tr>
+									<td>燃油类型</td>
+									<td width="337"></td>
+									<td width="186">过户日期</td>
+									<td width="505"></td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table table-bordered look-tabel look-tabe2">
+							<tbody>
+							<tr>
+								<th colspan="4" align="left" class="look-tabel-1"><strong>险种</strong></th>
+							</tr>
+							<tr class="look-tr">
+								<td width="340">险种</td>
+								<td width="200">保险费(元)</td>
+								<td width="340">净费(元)</td>
+							</tr>
+							<tr>
+								<td>交强险</td>
+								<td >550.00</td>
+								<td >888.00</td>
+							</tr>
+							<tr>
+								<td>车船税</td>
+								<td >550.00</td>
+								<td >888.00</td>
+							</tr>
+							<tr>
+								<td>商业险</td>
+								<td >550.00</td>
+								<td >888.00</td>
+							</tr>
+							<tr>
+								<td>商业险折扣</td>
+								<td >550.00</td>
+								<td >888.00</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<table class="table table-bordered look-tabel look-tabe2">
+							<tbody>
+							<tr>
+								<th colspan="6" align="left" class="look-tabel-1"><strong>险种</strong></th>
+							</tr>
+							<tr class="look-tr">
+								<td width="400">商业险明细保险费(元)</td>
+								<td width="200">保险费(元)</td>
+								<td width="200">净费(元)</td>
+								<td width="200">不计免赔明细</td>
+								<td width="200">保险费(元)</td>
+								<td width="200">净费(元)</td>
+							</tr>
+							<tr>
+								<td>车辆损失险(主)1825.32</td>
+								<td >550.00</td>
+								<td >888.00</td>
+								<td >550.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+							</tr>
+							<tr>
+								<td>车上人员险(主)(司机)(1万)</td>
+								<td >550.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+							</tr>
+							<tr>
+								<td>车上人员险(主)(乘客)(5座) *(1万)</td>
+								<td >550.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+							</tr>
+							<tr>
+								<td>车身划痕险(附)(5千)</td>
+								<td >550.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+								<td >888.00</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					</div>
+					
+				</div>
+
+			</div>
+    	</div>
+        
+	
+	</div>
+
+        <div class="foot-1">
+            <p>京ICP备16004067号</p>
+        </div>
+    </body>
+</html>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+
+		<script>
+			$(function(){
+				Bdb.Common();
+				
+				datePicker("start_date");
+				datePicker("end_date");
+				
+				$("#btn_search").click(function(){
+					$("#frm_search").submit();
+				});
+			})
+			Bdb = {};
+
+
+	/**
+	 * 返回字符串的长度,英文+1，utf8中文+3
+	 * @param str
+	 * @returns {Number}
+	 */
+			function getStringLength(str)
+			{
+			    var realLength = 0, len = str.length, charCode = -1;
+			    for (var i = 0; i < len; i++)
+			    {
+			        charCode = str.charCodeAt(i);
+			        if (charCode >= 0 && charCode <= 128) realLength += 1;
+			        else realLength += 3;
+			    }
+			    return realLength;
+			}
+
+			function datePicker(id)
+			{
+				$("#"+id).datepicker({dateFormat: "yy-mm-dd",
+					monthNames:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+					dayNamesMin:["日","一","二","三","四","五","六"]});
+			}
+
+			Bdb.Common = function(){
+				$("[data-url]").on("click",function(){
+					location.href=$(this).attr('data-url');
+				});
+			};
+
+		</script>
