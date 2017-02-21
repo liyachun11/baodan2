@@ -94,9 +94,9 @@
 						<p class="node_time"></p>
 					</div>
 				</div>
-				<!--.......弹出框开始......-->
-				<div class="tan-box">
-					<div class="tan-tlt">无法出售 <span>X</span></div>
+				<!--.......无法出售弹出框开始......-->
+				<div class="tan-box" style="display: none;">
+					<div class="tan-tlt">无法出售 <span></span></div>
 					<div class="tan-cot">
 						<div class="tan-p">说明:请卖方用户如实告知买方用户，若无法精确报价，请联系客服。</div>
 						<p>无法出售的原因:</p>
@@ -110,32 +110,103 @@
 					</div>
 
 				</div>
-				<!--.......弹出框结束......-->
+				<!--.......无法出售弹出框结束......-->
+				<!--.......请填写报价弹出框开始..此弹框为隐藏....-->
+				<div class="tan-box tan-box2" style="display: none;">
+					<div class="tan-tlt">请填写报价（与保险公司核保价格一致） <span></span></div>
+					<div class="tan-cot">
+						<div class="tan-p tan-p2">
+							<span>车牌号: <b>陕A8888</b></span>
+							<span>被保险人姓名: <b>黄瑞</b></span>
+							<span>车主姓名: <b>黄瑞</b></span>
+						</div>
+						<p class="p2-h">保险费: <b>2500</b>元</p>
+						<dl class="tan-dl">
+							<dt class="g_yon">*交强险</dt>
+							<dd><input type="text"  name="" value="">元</dd>
+							<dt class="she1-dt">*车船税</dt>
+							<dd><input type="text"  name="" value="">元</dd>
+						</dl>
+						<dl class="tan-dl">
+							<dt class="g_yon">*商业险</dt>
+							<dd><input type="text"  name="" value="">元 <span style="color: #ff0000;">（含不计免赔）</span></dd>
+						</dl>
+						<dl class="tan-dl">
+							<dt class="g_yon">*商业险折扣</dt>
+							<dd><input type="text"  name="" value="">元</dd>
+						</dl>
+						<dl class="tan-dl tan-dl2">
+							<dt class="g_yon">*备注</dt>
+							<dd><input type="text"  name="" value=""></dd>
+						</dl>
+						<p class="p2-h">净费: <b>2500</b>元</p>
+						<div class="tan-p tan-p2 tan-p3 ">
+ 							<span>交强险 000000 元</span>
+							<span>车船税 0.0000000 元</span>
+							<span>商业险 0.000000 元（含不计免赔）</span>
+						</div>
+						<p class="p2-h">起保日期</p>
+						<ul class="tan-dl">
+							<li>
+								<span>交强险</span><input type="text"  name="" value="">
+							</li>
+							<li>
+								<span>商业险</span><input type="text"  name="" value="">
+							</li>
+						</ul>
+
+						<div class="up-tup">图片上传<input type="file" ></div>
+						<ul class="tan-ol">
+							<li>商业险明细</li>
+							<li>商业险明细</li>
+							<li>商业险明细</li>
+							<li>商业险明细</li>
+							<li>商业险明细</li>
+							<li class="tan-ol_01"><input type="checkbox">完善资料</li>
+						</ul>
+						<dd class="c_r tan-tij"><span id="btn_post" class="btn_green bianji-btn">提交</span></dd>
+					</div>
+
+				</div>
+				<!--.......请填写报价弹出框结束......-->
 				<div class="look-xinxi">
 					<h4>订单信息</h4>
-					<ul class="look-xinxi-list">
-						<li>
-							订单状态:	<strong>人工报价</strong>
-						</li>
-						<li>
-							订单号:	<strong>人工报价</strong>
-						</li>
-						<li>
-							车险信息:	<strong>人工报价</strong>
-						</li>
-						<li>
-							产品要求:	<strong>人工报价</strong>
-						</li>
-						<li>
-							全费:	<strong>人工报价</strong>
-						</li>
-						<li>
-							净费:	<strong>人工报价</strong>
-						</li>
-						<li>
-							结算金额:	<strong>人工报价</strong>
-						</li>
-					</ul>
+					<div class="look-sc-box">
+						<ul class="look-xinxi-list">
+							<li>
+								订单状态:	<strong>人工报价</strong>
+							</li>
+							<li>
+								订单号:	<strong>人工报价</strong>
+							</li>
+							<li>
+								车险信息:	<strong>人工报价</strong>
+							</li>
+							<li>
+								产品要求:	<strong>人工报价</strong>
+							</li>
+							<li>
+								全费:	<strong>人工报价</strong>
+							</li>
+							<li>
+								净费:	<strong>人工报价</strong>
+							</li>
+							<li>
+								结算金额:	<strong>人工报价</strong>
+							</li>
+						</ul>
+						<div class="suc-1">
+							<div class="suc-2">
+								<span>订单号：16122427755834</span>
+								<span>状态：已完成</span>
+							</div>
+							<div class="suc-3"><i></i>本次交易已完成。欢迎再次光临体验，祝您生活愉快！</div>
+							<p>收货信息：杨芳,158*****008,陕西省 西安市 雁塔区 丈八沟街道 玫瑰大楼高科花园19号楼6-02号</p>
+							<p>发票信息：公司名称  金额</p>
+							<p>订单备注： 三十多分解落实到积分楼上的房间</p>
+						</div>
+					</div>
+
 					<p>报价失败的原因: 需要人工报价</p>
 					<div class="look-cat">
 						<div class="look-cat1">

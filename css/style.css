@@ -22,7 +22,7 @@ a:hover,a:focus{    text-decoration: none;}
     clear: both;
     visibility: hidden;
 }
-@media (min-width: 1024px){
+@media (min-width: 900px){
 .main-box{
 	width: 1200px;
 	margin: 0 auto;
@@ -32,6 +32,13 @@ a:hover,a:focus{    text-decoration: none;}
 	top: 20%;
 	left: 54%;
 }
+	.baox-box-text dl dd textarea{
+		width: 230px;
+		min-height: 130px;
+		border: 1px solid #C0D0D8;
+		border-radius: 4px;
+
+	}
 /* .look-xq{
 	padding: 58px 100px 60px;
 } */
@@ -47,6 +54,13 @@ a:hover,a:focus{    text-decoration: none;}
 	top: 20%;
 	left: 54%;
 }
+	.baox-box-text dl dd textarea{
+		width: 230px;
+		min-height: 130px;
+		border: 1px solid #C0D0D8;
+		border-radius: 4px;
+
+	}
 
 }
 @media (min-width: 1280px) {
@@ -59,6 +73,13 @@ a:hover,a:focus{    text-decoration: none;}
 	top: 20%;
 	left: 54%;
 }
+	.baox-box-text dl dd textarea{
+		width: 230px;
+		min-height: 130px;
+		border: 1px solid #C0D0D8;
+		border-radius: 4px;
+
+	}
 } 
 
 @media (min-width: 1366px) {
@@ -70,6 +91,13 @@ a:hover,a:focus{    text-decoration: none;}
 		position: absolute;
 		top: 20%;
 		left: 54%;
+	}
+	.baox-box-text dl dd textarea{
+		width: 230px;
+		min-height: 130px;
+		border: 1px solid #C0D0D8;
+		border-radius: 4px;
+
 	}
 }  
 
@@ -83,6 +111,13 @@ a:hover,a:focus{    text-decoration: none;}
 		top: 20%;
 		left: 54%;
 	}
+	.baox-box-text dl dd textarea{
+		width: 230px;
+		min-height: 130px;
+		border: 1px solid #C0D0D8;
+		border-radius: 4px;
+
+	}
 } 
 
 @media (min-width: 1680px) {
@@ -95,6 +130,13 @@ a:hover,a:focus{    text-decoration: none;}
 		top: 20%;
 		left: 43%;
 	}
+	.baox-box-text dl dd textarea{
+		width: 280px;
+		min-height: 130px;
+		border: 1px solid #C0D0D8;
+		border-radius: 4px;
+
+	}
 } 
 @media (min-width: 1920px) {
 .main-box{
@@ -105,6 +147,13 @@ a:hover,a:focus{    text-decoration: none;}
 		position: absolute;
 		top: 20%;
 		left: 43%;
+	}
+	.baox-box-text dl dd textarea{
+		width: 330px;
+		min-height: 130px;
+		border: 1px solid #C0D0D8;
+		border-radius: 4px;
+
 	}
 } 
 
@@ -520,12 +569,14 @@ a:hover,a:focus{    text-decoration: none;}
 	padding: 0 30px;
 	font-weight: normal;
 }
+.look-sc-box{
+	background-color: #F3F9FC;
+	border: 1px solid #C0D0D8;
+}
 .look-xinxi-list{
 	overflow: hidden;
 	margin-top: 10px;
-	border: 1px solid #C0D0D8;
 	width: 100%;
-	background-color: #F3F9FC;
 	padding: 10px;
 }
 .look-xinxi-list li{
@@ -544,6 +595,37 @@ a:hover,a:focus{    text-decoration: none;}
 	color: #807d79;
 	padding: 30px;
 	text-align: right;
+}
+.suc-1{
+	padding: 0 30px 20px;
+	font-size: 14px;
+	color: #666;
+}
+.suc-1 p{
+	padding: 5px 0;
+	text-align: left;
+}
+.suc-2{
+	border-top: 1px dashed #D0D3D4;
+	padding: 16px 0;
+}
+.suc-2 span{
+	margin-right: 45px;
+}
+.suc-3{
+	padding: 12px 30px;
+	background-color: #DFF1F8;
+	border: 1px solid #B7E2F3;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.suc-3 i{
+	display: inline-block;
+	width:17px ;
+	height:17px;
+	background: url("../img/ttt.png")left center no-repeat;
+	vertical-align: -3px;
+	margin: 0 20px;
 }
 .look-cat{
 	width: 100%;
@@ -1102,7 +1184,7 @@ body .BDD-login {
 	height: 40px;
 	line-height: 40px;
 	padding: 0 10px;
-	font-size: 22px;
+	font-size: 18px;
 	color: #666;
 	background-color: #f6f6f6;
 }
@@ -1111,6 +1193,10 @@ body .BDD-login {
 	width: 30px;
 	text-align: right;
 	cursor: pointer;
+	width: 18px;
+	height: 17px;
+	margin-top: 11px;
+	background: url("../img/delete.png") right center no-repeat;
 }
 .tan-cot{
 	padding: 0 20px;
@@ -1134,6 +1220,235 @@ body .BDD-login {
 	padding: 10px;
 	margin-bottom: 26px;
 }
+.tan-cot .tan-p2{
+	font-size: 14px;
+	color: #808080;
+}
+.tan-p2 span{
+	margin-right: 30px;
+}
+.tan-p2.tan-p3{
+	border-bottom: 0;
+	padding: 10px 0;
+}
+.tan-dl{
+	width: 700px;
+	min-height: 29px;
+	padding-top: 10px;
+	line-height: 29px;
+	overflow: hidden;
+}
+.tan-dl dt{
+	width: 120px;
+	float: left;
+	text-align: right;
+	line-height: 32px;
+	font-size: 14px;
+	color: #666;
+}
+.tan-dl dd{
+	float: left;
+}
+.tan-dl dd input{
+	width: 126px;
+	height: 34px;
+	padding: 0 8px;
+	border: 1px solid #C0D0D8;
+	border-radius: 2px;
+	margin-right: 3px;
+	margin: 0 8px;
+	background-color: #F3F9FC;
+}
+.p2-h{
+	font-size: 16px;
+	color: #333;
+}
+
+.p2-h b{
+	color: #fe6d00;
+}
+
+.tan-dl2 dd input{
+	width: 500px;
+}
+.tan-dl li{
+	float: left;
+	margin-right: 25px;
+	padding-bottom: 20px;
+}
+.tan-dl li input{
+	width: 126px;
+	height: 34px;
+	padding: 0 8px;
+	border: 1px solid #C0D0D8;
+	border-radius: 2px;
+	margin-right: 3px;
+	margin: 0 8px;
+	background-color: #F3F9FC;
+}
+.up-tup{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #F7FBFC;
+	position: relative;
+}
+.up-tup input{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -50px;
+	opacity: 0;
+}
+.tan-ol{
+	overflow: hidden;
+	margin: 15px 0;
+}
+.tan-ol li{
+	padding: 10px 15px;
+	text-align: center;
+	background: #E6E6E6;
+	float: left;
+	margin-right: 20px;
+
+}
+.tan-ol li.tan-ol_01{
+	/*float: right;*/
+	margin-right: 0;
+	background-color: #fff;
+}
+.tan-ol li.tan-ol_01 input{
+	vertical-align: -2px;
+	margin-right: 10px;
+}
+.tan-tij{
+	text-align: center;
+}
+.tan-tij span{
+	width: 357px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+	margin-top: 10px;
+}
+/*.......保险设置......*/
+.baox-box{
+	overflow: hidden;
+}
+.baox-box1,.baox-box2{
+	width: 45%;
+	float: left;
+}
+.baox-box1 dl{
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+.baox-box1 dl dt,.baox-box1 dl dd{
+	float: left;
+	line-height: 34px;
+}
+.baox-box1 dl dt,.baox-box-text dl dt{
+	width: 156px;
+	text-align: right;
+	font-size: 14px;
+	color: #454545;
+	font-weight: normal;
+	margin-right: 8px;
+
+}
+.baox-ip1{
+	width: 310px;
+	height: 34px;
+	line-height: 34;
+	border: 1px solid #C0D0D8;
+	border-radius: 4px;
+	padding: 0 10px;
+}
+.baox-ip1.baox-ip2{
+	width: 200px;
+	margin-right: 5px;
+}
+.baox-box1-dl span{
+	color: #FF0D0D;
+}
+.baox-ip1.baox-ip3{
+	width: 140px;
+	margin-right: 5px;
+}
+.baox-box1-dl dd .baox-ra{
+	margin-right: 10px;
+	margin: 0;
+	cursor: pointer;
+	border: 1px solid #f00;
+}
+.baox-box1-dl dd .baox-ra1{
+	margin-left: 15px;
+}
+.baox-box2 dl dt{
+	margin-top: 30px;
+	font-size: 14px;
+	color: #454545;
+}
+
+.baox-box2 dl dd input,.baox-box2 dl dt input{
+	margin: 0;
+}
+.baox-box2 dl dt input{
+	width: 16px;
+	height: 16px;
+	margin: 0 10px;
+}
+.baox-box2 dl dd{
+	padding-left: 22px;
+	margin-top: 8px;
+}
+.baox-box2 dl dd span{
+	font-size: 14px;
+	line-height: 20px;
+	color: #999;
+	margin-right: 17px;
+	display: inline-block;
+	margin-top: 15px;
+}
+.baox-box2 dl dd span input{
+	width: 20px;
+	height: 20px;
+	vertical-align: -5px;
+	margin-right: 5px;
+}
+.baox-box-text1{
+	overflow: hidden;
+	margin: 20px 0 30px;
+}
+.baox-box-text dl{
+	overflow: hidden;
+	float: left;
+}
+.baox-box-text dl dt,.baox-box-text dl dd{
+	float: left;
+}
+.baox-box-text dl dd textarea{
+	padding: 10px;
+}
+.baox-bt{
+	width: 300px;
+}
+.baox-box2{
+	padding-top: 120px;
+}
+.baox-box2 h4{
+	font-weight: bold;
+	font-size: 20px;
+	color: #4c4a4a;
+}
+.baox-box1{
+	padding-top: 62px;
+}
+
+
+
+
 
 
 
